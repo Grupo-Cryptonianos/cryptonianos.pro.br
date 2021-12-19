@@ -35,3 +35,39 @@ HUGO_ENABLEGITINFO = "true"
   status = 200
   force = true
 
+[[redirects]]
+  from = "/api/whoami"
+  to = "/.netlify/functions/whoami"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/whoami-json"
+  to = "/.netlify/functions/whoami-json"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/whoami-jsonp"
+  to = "/.netlify/functions/whoami-jsonp"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/whoami-xml"
+  to = "/.netlify/functions/whoami-xml"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/whoami-xmlp"
+  to = "/.netlify/functions/whoami-xmlp"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/discord"
+  to = "https://discord.gg/grq2qwpZeS"
+  status = 200
+  force = true
+
