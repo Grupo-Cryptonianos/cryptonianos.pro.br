@@ -66,7 +66,7 @@ disableHugoGeneratorInject = true
     name = "Sobre"
     weight = 3
     identifier = "sobre o grupo"
-    url = "/sobre-o-cryptonianos/"
+    url = "/sobre-cryptonianos/"
 
 [params.social]
   twitter = "cryptonianos"
@@ -89,6 +89,6 @@ disableHugoGeneratorInject = true
   twitter = "cryptonianos"
   facebook = "cryptonianos"
   instagram = "cryptonianos"
-  pinterest = "cesargimenes"
+  pinterest = "criptonianos"
   youtube = "Grupo Cryptonianos"
   github = "Grupo-Cryptonianos"
