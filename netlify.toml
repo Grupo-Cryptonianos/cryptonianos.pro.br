@@ -1,0 +1,37 @@
+[build]
+  command = "make build"
+  functions = "functions"
+  publish = "public"
+
+[context.production.environment]
+HUGO_VERSION = "0.79.0"
+HUGO_ENV = "production"
+HUGO_ENABLEGITINFO = "true"
+
+[[headers]]
+ for = "/*"
+  [headers.values]
+   Access-Control-Allow-Origin = "*"
+   X-Frame-Options = "DENY"
+   X-XSS-Protection = "1; mode=block"
+   Referrer-Policy = "no-referrer"
+   X-Content-Type-Options = "nosniff"
+   Link = "</crg.css>; rel=preload; as=style"
+
+[[headers]]
+  for = "/favicon.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[redirects]]
+  from = "/api/uuid"
+  to = "/.netlify/functions/uuid"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/ip"
+  to = "/.netlify/functions/ip"
+  status = 200
+  force = true
+

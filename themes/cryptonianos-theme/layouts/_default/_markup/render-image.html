@@ -1,0 +1,8 @@
+{{- if strings.HasPrefix .Destination "http" -}}
+<img loading="lazy" src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} />
+{{- else -}}
+{{ $file := index (split .Destination "#") 0 }}
+{{ $class := index (split .Destination "#") 1 }}
+{{ $class = $class | default  "floatleft" }}
+<img loading="lazy" src="{{ .Destination | safeURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} {{ with imageConfig ( printf "static/%s" $file ) }} width={{ .Width }} height="{{ .Height }}" {{ end }} />
+{{- end -}}

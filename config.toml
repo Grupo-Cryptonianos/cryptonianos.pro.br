@@ -1,0 +1,94 @@
+baseurl = "https://cryptonianos.pro.br/"
+languageCode = "pt-br"
+defaultContentLanguage = "pt-br"
+title = "Grupo Cryptonianos"
+copyright = "© 2021. Grupo Cryptonianos. All rights reserved."
+author = "Grupo Cryptonianos"
+# Shown in the side menu
+paginate = 20
+theme = "cryptonianos-theme"
+enableRobotsTXT = true
+description = "Grupo de estudos de tecnologias relacionadas ao desenvolvimento de smart contracts e integração com moedas digitais."
+canonifyurls = true
+disableHugoGeneratorInject = true
+
+[taxonomies]
+  category = "categorias"
+  tag = "tags"
+
+[indexes]
+  category = "categorias"
+  tag = "tags"
+  topic = "topicos"
+
+[params]
+  ISO8601 = "2006-01-02T15:04:05JST"
+  highlightjs = "androidstudio"
+  highlightjs_extra_languages = ["go","x86asm", "solidity", "yaml", "javascript"]
+  googleAnalytics = "UA-80761879-1"
+  author = "Grupo Cryptonianos"
+	locale = "pt-br"
+	# Shown in the home page
+	subtitle = "Grupo de estudos de tecnologias relacionadas ao desenvolvimento de smart contracts e integração com moedas digitais."
+	brand = "Cryptonianos"
+	disqusShortname = "cryptonianos"
+	disqus = "cryptonianos"
+	dateFormat = "2006-01-02"
+    PostsListDescription = "Grupo de estudos de tecnologias relacionadas ao desenvolvimento de smart contracts e integração com moedas digitais."
+    description = "Grupo de estudos de tecnologias relacionadas ao desenvolvimento de smart contracts e integração com moedas digitais."
+  # Shown in the home page
+  [params.publisher]
+    name = "Grupo Cryptonianos"
+
+    [params.publisher.logo]
+      url = "/logo.png"
+      width = 600
+      height = 60
+    
+    [params.logo]
+      url = "/logo.png"
+      width = 600
+      height = 60
+    
+    [params.image]
+      url = "/cover.png"
+      width = 800
+      height = 600
+
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    weight = 1
+    identifier = "home"
+    url = "/"
+  [[menu.main]]
+    name = "Sobre"
+    weight = 3
+    identifier = "sobre o grupo"
+    url = "/sobre-o-cryptonianos/"
+
+[params.social]
+  twitter = "cryptonianos"
+  facebook = "cryptonianos"
+  instagram = "cryptonianos"
+  github = "cryptonianos"
+  youtube = "Grupo Cryptonianos"
+  name = "Grupo Cryptonianos"
+
+
+[build]
+  publish = "public"
+  command = "hugo --minify"
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML", "RSS"]
+
+[social]
+  twitter = "cryptonianos"
+  facebook = "cryptonianos"
+  instagram = "cryptonianos"
+  pinterest = "cesargimenes"
+  youtube = "Grupo Cryptonianos"
+  github = "Grupo-Cryptonianos"

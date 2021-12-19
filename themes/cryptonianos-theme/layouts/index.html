@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+<div class="container">
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+<ul>
+{{range .Site.RegularPages }}
+{{ if ne .Draft true}}
+{{ .Render "li" }}
+{{ end }}
+{{ end }}
+</ul>
+</div>
+{{ partial "footer.html" . }}

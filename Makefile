@@ -1,0 +1,6 @@
+build:
+	hugo --gc --minify		
+	mkdir -p functions
+	cd src/uuid && go build -o ../../functions/uuid ./...
+	cd src/ip && go build -o ../../functions/ip ./...
+
